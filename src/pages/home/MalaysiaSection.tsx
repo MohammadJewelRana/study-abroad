@@ -4,6 +4,7 @@ import {
   FaBookOpen,
   FaCheckCircle,
   FaGraduationCap,
+  FaMoneyBillWave,
   FaUniversity,
   FaWhatsapp,
 } from "react-icons/fa";
@@ -12,18 +13,79 @@ const WHATSAPP_URL =
   "https://wa.me/8801977550083?text=আসসালামু%20আলাইকুম,%20আমি%20Malaysia-তে%20Masters%20ও%20PhD%20সম্পর্কে%20বিস্তারিত%20জানতে%20চাই।";
 
 const MalaysiaSection: React.FC = () => {
+  const studyFields = [
+    "Business",
+    "Management",
+    "Computer Science",
+    "IT",
+    "Data Science",
+    "AI",
+    "Engineering",
+    "Finance",
+  ];
+
   return (
     <section
       id="malaysia"
-      className="relative overflow-hidden bg-slate-950 px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28"
+      className="
+        relative
+        overflow-hidden
+        bg-slate-950
+        px-4
+        py-20
+        sm:px-6
+        sm:py-24
+        lg:px-8
+        lg:py-28
+      "
     >
       {/* =====================================================
           BACKGROUND DECORATION
       ====================================================== */}
 
-      <div className="absolute -left-40 top-20 h-96 w-96 rounded-full bg-red-600/10 blur-3xl" />
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -left-40
+          top-20
+          h-96
+          w-96
+          rounded-full
+          bg-emerald-500/10
+          blur-3xl
+        "
+      />
 
-      <div className="absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-yellow-400/10 blur-3xl" />
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -right-40
+          bottom-0
+          h-96
+          w-96
+          rounded-full
+          bg-yellow-400/10
+          blur-3xl
+        "
+      />
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          left-1/2
+          top-1/2
+          h-[500px]
+          w-[500px]
+          -translate-x-1/2
+          -translate-y-1/2
+          rounded-full
+          bg-cyan-400/[0.03]
+          blur-3xl
+        "
+      />
 
       <div className="relative mx-auto max-w-7xl">
 
@@ -128,7 +190,15 @@ const MalaysiaSection: React.FC = () => {
                 IMAGE
             ================================================== */}
 
-            <div className="relative min-h-[320px] overflow-hidden sm:min-h-[400px] lg:min-h-[650px]">
+            <div
+              className="
+                relative
+                min-h-[320px]
+                overflow-hidden
+                sm:min-h-[400px]
+                lg:min-h-[650px]
+              "
+            >
 
               <img
                 src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1400&q=90"
@@ -146,9 +216,21 @@ const MalaysiaSection: React.FC = () => {
               />
 
               {/* Image overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-slate-950" />
+              <div
+                className="
+                  absolute
+                  inset-0
+                  bg-gradient-to-t
+                  from-slate-950
+                  via-slate-950/30
+                  to-transparent
+                  lg:bg-gradient-to-r
+                  lg:from-transparent
+                  lg:to-slate-950
+                "
+              />
 
-              {/* Malaysia badge */}
+              {/* Malaysia Badge */}
               <div
                 className="
                   absolute
@@ -163,6 +245,7 @@ const MalaysiaSection: React.FC = () => {
                   bg-slate-950/70
                   px-4
                   py-2.5
+                  shadow-lg
                   backdrop-blur-md
                   sm:left-7
                   sm:top-7
@@ -182,13 +265,38 @@ const MalaysiaSection: React.FC = () => {
               </div>
 
               {/* Image bottom text */}
-              <div className="absolute bottom-6 left-5 sm:bottom-8 sm:left-7">
+              <div
+                className="
+                  absolute
+                  bottom-6
+                  left-5
+                  sm:bottom-8
+                  sm:left-7
+                "
+              >
 
-                <p className="text-xs font-semibold uppercase tracking-[0.25em] text-yellow-400">
+                <p
+                  className="
+                    text-xs
+                    font-semibold
+                    uppercase
+                    tracking-[0.25em]
+                    text-yellow-400
+                  "
+                >
                   Study in
                 </p>
 
-                <h3 className="mt-1 text-4xl font-black tracking-tight text-white sm:text-5xl">
+                <h3
+                  className="
+                    mt-1
+                    text-4xl
+                    font-black
+                    tracking-tight
+                    text-white
+                    sm:text-5xl
+                  "
+                >
                   Malaysia
                 </h3>
 
@@ -200,7 +308,16 @@ const MalaysiaSection: React.FC = () => {
                 CONTENT
             ================================================== */}
 
-            <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-12">
+            <div
+              className="
+                flex
+                flex-col
+                justify-center
+                p-6
+                sm:p-8
+                lg:p-12
+              "
+            >
 
               {/* Program badges */}
               <div className="flex flex-wrap gap-2">
@@ -249,12 +366,22 @@ const MalaysiaSection: React.FC = () => {
                 "
               >
                 উচ্চশিক্ষার জন্য
+
                 <span className="block text-yellow-400">
                   Malaysia
                 </span>
               </h3>
 
-              <p className="mt-5 text-sm leading-7 text-slate-400 sm:text-base sm:leading-8">
+              <p
+                className="
+                  mt-5
+                  text-sm
+                  leading-7
+                  text-slate-400
+                  sm:text-base
+                  sm:leading-8
+                "
+              >
                 আপনার academic background এবং career goal অনুযায়ী
                 Masters অথবা PhD program নির্বাচন করতে আমাদের
                 experienced team-এর কাছ থেকে guidance নিন।
@@ -286,6 +413,7 @@ const MalaysiaSection: React.FC = () => {
                   </div>
 
                   <div>
+
                     <h4 className="text-sm font-bold text-white">
                       শিক্ষাগত যোগ্যতা
                     </h4>
@@ -295,6 +423,7 @@ const MalaysiaSection: React.FC = () => {
                       এবং PhD প্রোগ্রামের জন্য সংশ্লিষ্ট Master's
                       Degree প্রয়োজন।
                     </p>
+
                   </div>
 
                 </div>
@@ -319,6 +448,7 @@ const MalaysiaSection: React.FC = () => {
                   </div>
 
                   <div>
+
                     <h4 className="text-sm font-bold text-white">
                       IELTS Requirement
                     </h4>
@@ -327,6 +457,7 @@ const MalaysiaSection: React.FC = () => {
                       Program ও university অনুযায়ী IELTS
                       requirement প্রযোজ্য হতে পারে।
                     </p>
+
                   </div>
 
                 </div>
@@ -351,6 +482,7 @@ const MalaysiaSection: React.FC = () => {
                   </div>
 
                   <div>
+
                     <h4 className="text-sm font-bold text-white">
                       ব্যাংক সাপোর্ট
                     </h4>
@@ -359,12 +491,51 @@ const MalaysiaSection: React.FC = () => {
                       প্রয়োজনীয় ব্যাংকিং ও financial
                       documentation সম্পর্কে guidance প্রদান করা হয়।
                     </p>
+
                   </div>
 
                 </div>
 
               </div>
 
+              {/* =================================================
+                  COSTING
+              ================================================== */}
+
+            {/* ================= COST ================= */}
+
+<div
+  className="
+    mt-7
+    rounded-2xl
+    border
+    border-white/10
+    bg-white/[0.03]
+    px-5
+    py-4
+    text-center
+  "
+>
+  <div className="flex items-center justify-center gap-2">
+
+    <FaMoneyBillWave
+      size={14}
+      className="text-yellow-400"
+    />
+
+    <p className="text-sm font-bold text-white">
+      খরচ:
+      <span className="ml-1.5 text-yellow-400">
+        ২,৫০,০০০ টাকা
+      </span>
+    </p>
+
+  </div>
+
+  <p className="mt-1.5 text-[10px] font-medium text-slate-500 sm:text-xs">
+    (  Tuition Fees + EMCGH)
+  </p>
+</div>
               {/* =================================================
                   SUBJECTS
               ================================================== */}
@@ -377,16 +548,7 @@ const MalaysiaSection: React.FC = () => {
 
                 <div className="mt-4 flex flex-wrap gap-2">
 
-                  {[
-                    "Business",
-                    "Management",
-                    "Computer Science",
-                    "IT",
-                    "Data Science",
-                    "AI",
-                    "Engineering",
-                    "Finance",
-                  ].map((field: string) => (
+                  {studyFields.map((field) => (
                     <span
                       key={field}
                       className="
@@ -421,6 +583,7 @@ const MalaysiaSection: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
+                  group
                   mt-8
                   flex
                   w-full
@@ -444,13 +607,18 @@ const MalaysiaSection: React.FC = () => {
                   sm:text-base
                 "
               >
+
                 <FaWhatsapp size={20} />
 
                 Malaysia সম্পর্কে যোগাযোগ করুন
 
                 <FaArrowRight
                   size={13}
-                  className="transition-transform duration-300"
+                  className="
+                    transition-transform
+                    duration-300
+                    group-hover:translate-x-1
+                  "
                 />
 
               </a>
@@ -471,7 +639,7 @@ const MalaysiaSection: React.FC = () => {
             "Masters & PhD Programs",
             "University Guidance",
             "Admission & Visa Support",
-          ].map((item: string) => (
+          ].map((item) => (
             <div
               key={item}
               className="

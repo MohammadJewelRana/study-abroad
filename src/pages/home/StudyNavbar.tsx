@@ -99,12 +99,7 @@ const StudyNavbar = () => {
               দেশসমূহ
             </a>
 
-            <a
-              href="#why-us"
-              className="text-sm font-semibold text-white transition hover:text-yellow-400"
-            >
-              কেন আমরা
-            </a>
+         
 
             <a
               href="#malaysia"
@@ -207,13 +202,7 @@ const StudyNavbar = () => {
                 দেশসমূহ
               </a>
 
-              <a
-                href="#why-us"
-                onClick={closeMenu}
-                className="rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition hover:bg-white/10 hover:text-yellow-400"
-              >
-                কেন আমরা
-              </a>
+ 
 
               <a
                 href="#malaysia"

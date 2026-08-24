@@ -6,7 +6,7 @@ const whatsappLink =
 const facebookLink =
   "https://www.facebook.com/profile.php?id=61580335493258";
 
-const imoLink = "https://imo.im/01977005581";
+// const imoLink = "https://imo.im/01977005581";
 
 // const viberLink = "viber://chat?number=%2B8801977005581";
 
@@ -40,7 +40,7 @@ const FloatingSocial = () => {
       </a>
 
       {/* IMO */}
-      <a
+      {/* <a
         href={imoLink}
         target="_blank"
         rel="noopener noreferrer"
@@ -54,7 +54,7 @@ const FloatingSocial = () => {
         />
 
         <span className="absolute inset-0 animate-ping rounded-full border border-sky-400 opacity-70"></span>
-      </a>
+      </a> */}
 
       {/* Viber */}
       {/* <a

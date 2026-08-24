@@ -1,16 +1,17 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
- 
+
 import {
   FaBookOpen,
   FaGraduationCap,
   FaUniversity,
   FaWhatsapp,
+  FaCheckCircle,
 } from "react-icons/fa";
 
 const WHATSAPP_URL =
   "https://wa.me/8801977550083?text=আসসালামু%20আলাইকুম,%20আমি%20বিদেশে%20পড়াশোনা%20সম্পর্কে%20বিস্তারিত%20জানতে%20চাই।";
 
-const CountryCard = ({ country }:any) => {
+const CountryCard = ({ country }: any) => {
   return (
     <article
       className="
@@ -27,7 +28,10 @@ const CountryCard = ({ country }:any) => {
         hover:shadow-2xl
       "
     >
-      {/* Image */}
+      {/* =====================================================
+          IMAGE
+      ====================================================== */}
+
       <div className="relative h-[300px] overflow-hidden">
 
         <img
@@ -43,9 +47,22 @@ const CountryCard = ({ country }:any) => {
           "
         />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent" />
+        {/* Overlay */}
+        <div
+          className="
+            absolute
+            inset-0
+            bg-gradient-to-t
+            from-slate-950
+            via-slate-950/30
+            to-transparent
+          "
+        />
 
-        {/* Flag */}
+        {/* =================================================
+            FLAG
+        ================================================== */}
+
         <div
           className="
             absolute
@@ -60,6 +77,7 @@ const CountryCard = ({ country }:any) => {
             bg-slate-950/70
             px-3
             py-2
+            shadow-lg
             backdrop-blur-md
           "
         >
@@ -74,39 +92,95 @@ const CountryCard = ({ country }:any) => {
           </span>
         </div>
 
-        {/* Country Name */}
+        {/* =================================================
+            VISA SUCCESS BADGE
+        ================================================== */}
+
+        {country.visaSuccess && (
+          <div
+            className="
+              absolute
+              right-5
+              top-5
+              flex
+              items-center
+              gap-1.5
+              rounded-full
+              border
+              border-emerald-300/30
+              bg-red-500/90
+              px-3
+              py-2
+              shadow-lg
+              shadow-emerald-950/20
+              backdrop-blur-md
+            "
+          >
+            <FaCheckCircle
+              size={12}
+              className="text-white"
+            />
+
+            <span className="text-[10px] font-black uppercase tracking-wide text-white sm:text-xs">
+              {country.visaSuccess}
+            </span>
+          </div>
+        )}
+
+        {/* =================================================
+            COUNTRY NAME
+        ================================================== */}
+
         <div className="absolute bottom-6 left-6">
 
-          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-yellow-400">
+          <p
+            className="
+              text-xs
+              font-semibold
+              uppercase
+              tracking-[0.25em]
+              text-yellow-400
+            "
+          >
             Study in
           </p>
 
-          <h3 className="mt-1 text-4xl font-black tracking-tight text-white sm:text-5xl">
+          <h3
+            className="
+              mt-1
+              text-4xl
+              font-black
+              tracking-tight
+              text-white
+              sm:text-5xl
+            "
+          >
             {country.countryEn}
           </h3>
-
-       
 
         </div>
       </div>
 
-      {/* Body */}
+      {/* =====================================================
+          BODY
+      ====================================================== */}
+
       <div className="p-6 sm:p-7">
 
         {/* Programs */}
         <div className="flex flex-wrap gap-2">
 
-          {country.programs.map((program) => (
+          {country.programs.map((program: any) => (
             <span
               key={program}
               className="
                 rounded-full
-                bg-red-50
+                bg-slate-100
                 px-3.5
                 py-1.5
                 text-xs
                 font-bold
-                text-red-600
+                text-slate-700
               "
             >
               {program}
@@ -215,7 +289,10 @@ const CountryCard = ({ country }:any) => {
 
         </div>
 
-        {/* WhatsApp CTA */}
+        {/* =================================================
+            WHATSAPP CTA
+        ================================================== */}
+
         <a
           href={WHATSAPP_URL}
           target="_blank"
@@ -228,7 +305,7 @@ const CountryCard = ({ country }:any) => {
             justify-center
             gap-3
             rounded-xl
-            bg-green-500
+            bg-emerald-500
             px-5
             py-3.5
             text-sm
@@ -238,9 +315,9 @@ const CountryCard = ({ country }:any) => {
             transition-all
             duration-300
             hover:-translate-y-1
-            hover:bg-green-600
+            hover:bg-emerald-600
             hover:shadow-lg
-            hover:shadow-green-500/20
+            hover:shadow-emerald-500/20
           "
         >
           <FaWhatsapp size={20} />
