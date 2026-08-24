@@ -1,36 +1,48 @@
 import React from "react";
-import { FaGraduationCap } from "react-icons/fa";
 
-const StudyFooter = () => {
+import image from '../../assets/logo.jpg'
+
+const StudyFooter: React.FC = () => {
   return (
-    <footer className="bg-slate-950 px-5 py-8">
+    <footer className="border-t border-white/10 bg-slate-950 px-5 py-7">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 sm:flex-row">
 
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 md:flex-row">
-
+        {/* Logo & Agency */}
         <div className="flex items-center gap-3">
 
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-red-600 text-white">
-            <FaGraduationCap />
+          {/* Logo Image */}
+          <div
+            className="
+              flex
+              h-10
+              w-auto
+              shrink-0
+              items-center
+              justify-center
+              overflow-hidden
+              rounded-xl
+              border
+           
+            "
+          >
+            <img
+              src={image}
+              alt="Your Agency Logo"
+              className="h-full w-full object-cover"
+            />
           </div>
 
-          <div>
-            <p className="font-black text-white">
-              YOUR AGENCY
-            </p>
-
-            <p className="text-xs text-slate-500">
-              Study Abroad Consultancy
-            </p>
-          </div>
+          {/* Agency Name */}
+         
 
         </div>
 
-        <p className="text-xs text-slate-500">
-          © {new Date().getFullYear()} Your Agency. All Rights Reserved.
+        {/* Copyright */}
+        <p className="text-center text-[10px] text-slate-600 sm:text-xs">
+          © {new Date().getFullYear()} Avelon Edu & Travels. All Rights Reserved.
         </p>
 
       </div>
-
     </footer>
   );
 };

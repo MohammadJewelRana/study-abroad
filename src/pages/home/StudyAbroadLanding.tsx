@@ -3,11 +3,12 @@ import StudyNavbar from "./StudyNavbar";
 import StudyHero from "./StudyHero";
 import StudyStats from "./StudyStats";
 import CountriesSection from "./CountriesSection";
-import WhyChooseUs from "./WhyChooseUs";
+ 
 import MalaysiaSection from "./MalaysiaSection";
 import ProcessSection from "./ProcessSection";
 import ContactCTA from "./ContactCTA";
 import StudyFooter from "./StudyFooter";
+import FloatingSocial from "./FloatingSocial";
  
 
 const StudyAbroad = () => {
@@ -22,7 +23,7 @@ const StudyAbroad = () => {
 
       <CountriesSection />
 
-      <WhyChooseUs />
+      {/* <WhyChooseUs /> */}
 
       <MalaysiaSection />
 
@@ -31,6 +32,7 @@ const StudyAbroad = () => {
       <ContactCTA />
 
       <StudyFooter />
+      <FloatingSocial/>
 
     </main>
   );

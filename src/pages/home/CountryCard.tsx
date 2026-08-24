@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
  
 import {
   FaBookOpen,
@@ -9,7 +10,7 @@ import {
 const WHATSAPP_URL =
   "https://wa.me/8801977550083?text=আসসালামু%20আলাইকুম,%20আমি%20বিদেশে%20পড়াশোনা%20সম্পর্কে%20বিস্তারিত%20জানতে%20চাই।";
 
-const CountryCard = ({ country }) => {
+const CountryCard = ({ country }:any) => {
   return (
     <article
       className="
