@@ -1,10 +1,9 @@
-
+import React from "react";
 import {
   FaArrowRight,
   FaBookOpen,
   FaCheckCircle,
   FaGraduationCap,
-  FaMoneyBillWave,
   FaUniversity,
   FaWhatsapp,
 } from "react-icons/fa";
@@ -95,7 +94,6 @@ const MalaysiaSection: React.FC = () => {
 
         <div className="mx-auto max-w-3xl text-center">
 
-          {/* Eyebrow */}
           <div className="flex items-center justify-center gap-3">
 
             <span className="h-px w-8 bg-yellow-400 sm:w-12" />
@@ -123,7 +121,6 @@ const MalaysiaSection: React.FC = () => {
 
           </div>
 
-          {/* Heading */}
           <h2
             className="
               mt-5
@@ -144,7 +141,6 @@ const MalaysiaSection: React.FC = () => {
             </span>
           </h2>
 
-          {/* Description */}
           <p
             className="
               mx-auto
@@ -193,9 +189,9 @@ const MalaysiaSection: React.FC = () => {
             <div
               className="
                 relative
-                min-h-[320px]
+                min-h-[430px]
                 overflow-hidden
-                sm:min-h-[400px]
+                sm:min-h-[500px]
                 lg:min-h-[650px]
               "
             >
@@ -215,7 +211,8 @@ const MalaysiaSection: React.FC = () => {
                 "
               />
 
-              {/* Image overlay */}
+              {/* Image Overlay */}
+
               <div
                 className="
                   absolute
@@ -230,32 +227,45 @@ const MalaysiaSection: React.FC = () => {
                 "
               />
 
-              {/* Malaysia Badge */}
+              {/* =================================================
+                  MALAYSIA FLAG
+              ================================================== */}
+
               <div
                 className="
                   absolute
-                  left-5
-                  top-5
+                  left-4
+                  top-4
                   flex
                   items-center
-                  gap-3
+                  gap-2
                   rounded-full
                   border
                   border-white/20
                   bg-slate-950/70
-                  px-4
-                  py-2.5
+                  px-3
+                  py-2
                   shadow-lg
                   backdrop-blur-md
                   sm:left-7
                   sm:top-7
+                  sm:gap-3
+                  sm:px-4
+                  sm:py-2.5
                 "
               >
 
                 <img
                   src="https://flagcdn.com/w160/my.png"
                   alt="Malaysia flag"
-                  className="h-5 w-8 rounded object-cover"
+                  className="
+                    h-5
+                    w-8
+                    rounded
+                    object-cover
+                    sm:h-6
+                    sm:w-10
+                  "
                 />
 
                 <span className="text-xs font-bold text-white sm:text-sm">
@@ -264,12 +274,76 @@ const MalaysiaSection: React.FC = () => {
 
               </div>
 
-              {/* Image bottom text */}
+              {/* =================================================
+                  COST ON IMAGE
+              ================================================== */}
+
+              <div
+                className="
+                  absolute
+                  left-4
+                  top-24
+                  z-10
+                  sm:left-7
+                  sm:top-28
+                "
+              >
+
+                <div
+                  className="
+                    rounded-2xl
+                    border
+                    border-red-500/30
+                    bg-slate-950/75
+                    px-4
+                    py-3
+                    shadow-2xl
+                    backdrop-blur-md
+                    sm:px-6
+                    sm:py-4
+                  "
+                >
+
+                  <p
+                    className="
+                      text-2xl
+                      font-black
+                      leading-tight
+                      tracking-tight
+                      text-red-500
+                      sm:text-3xl
+                      md:text-4xl
+                    "
+                  >
+                    মাত্র ২ লক্ষ ৫০ হাজার টাকা
+                  </p>
+
+                  <p
+                    className="
+                      mt-1
+                      text-[9px]
+                      font-semibold
+                      tracking-wide
+                      text-white/70
+                      sm:text-xs
+                    "
+                  >
+                    (Tuition Fees + EMGS)
+                  </p>
+
+                </div>
+
+              </div>
+
+              {/* =================================================
+                  IMAGE BOTTOM TEXT
+              ================================================== */}
+
               <div
                 className="
                   absolute
                   bottom-6
-                  left-5
+                  left-4
                   sm:bottom-8
                   sm:left-7
                 "
@@ -320,6 +394,7 @@ const MalaysiaSection: React.FC = () => {
             >
 
               {/* Program badges */}
+
               <div className="flex flex-wrap gap-2">
 
                 <span
@@ -354,7 +429,8 @@ const MalaysiaSection: React.FC = () => {
 
               </div>
 
-              {/* Main title */}
+              {/* Main Title */}
+
               <h3
                 className="
                   mt-6
@@ -394,6 +470,7 @@ const MalaysiaSection: React.FC = () => {
               <div className="mt-8 space-y-5">
 
                 {/* Educational Qualification */}
+
                 <div className="flex gap-3">
 
                   <div
@@ -429,6 +506,7 @@ const MalaysiaSection: React.FC = () => {
                 </div>
 
                 {/* IELTS */}
+
                 <div className="flex gap-3">
 
                   <div
@@ -463,6 +541,7 @@ const MalaysiaSection: React.FC = () => {
                 </div>
 
                 {/* Bank Support */}
+
                 <div className="flex gap-3">
 
                   <div
@@ -498,44 +577,6 @@ const MalaysiaSection: React.FC = () => {
 
               </div>
 
-              {/* =================================================
-                  COSTING
-              ================================================== */}
-
-            {/* ================= COST ================= */}
-
-<div
-  className="
-    mt-7
-    rounded-2xl
-    border
-    border-white/10
-    bg-white/[0.03]
-    px-5
-    py-4
-    text-center
-  "
->
-  <div className="flex items-center justify-center gap-2">
-
-    <FaMoneyBillWave
-      size={14}
-      className="text-yellow-400"
-    />
-
-    <p className="text-sm font-bold text-white">
-      খরচ:
-      <span className="ml-1.5 text-yellow-400">
-        ২,৫০,০০০ টাকা
-      </span>
-    </p>
-
-  </div>
-
-  <p className="mt-1.5 text-[10px] font-medium text-slate-500 sm:text-xs">
-    (  Tuition Fees + EMCGH)
-  </p>
-</div>
               {/* =================================================
                   SUBJECTS
               ================================================== */}
@@ -658,9 +699,11 @@ const MalaysiaSection: React.FC = () => {
                 text-slate-400
               "
             >
+
               <FaCheckCircle className="text-yellow-400" />
 
               {item}
+
             </div>
           ))}
 

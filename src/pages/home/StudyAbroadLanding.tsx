@@ -9,6 +9,7 @@ import ProcessSection from "./ProcessSection";
 import ContactCTA from "./ContactCTA";
 import StudyFooter from "./StudyFooter";
 import FloatingSocial from "./FloatingSocial";
+import MedicalStudySection from "./MedicalStudySection";
  
 
 const StudyAbroad = () => {
@@ -26,6 +27,7 @@ const StudyAbroad = () => {
       {/* <WhyChooseUs /> */}
 
       <MalaysiaSection />
+      <MedicalStudySection/>
 
       <ProcessSection />
 
