@@ -1,4 +1,4 @@
-import React from "react";
+
 import StudyNavbar from "./StudyNavbar";
 import StudyHero from "./StudyHero";
 import StudyStats from "./StudyStats";

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import   { useEffect, useState } from "react";
 import {
   FaBars,
                       
@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 import image from '../../assets/logo.jpg'
 
-const WHATSAPP_NUMBER = "8801977550083";
+const WHATSAPP_NUMBER = "8801977005583";
 
 const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
   "আসসালামু আলাইকুম, আমি Study Abroad সম্পর্কে বিস্তারিত জানতে চাই।"

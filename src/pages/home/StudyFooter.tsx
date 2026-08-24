@@ -1,4 +1,4 @@
-import React from "react";
+
 
 import image from '../../assets/logo.jpg'
 
@@ -14,7 +14,7 @@ const StudyFooter: React.FC = () => {
           <div
             className="
               flex
-              h-10
+              h-16
               w-auto
               shrink-0
               items-center

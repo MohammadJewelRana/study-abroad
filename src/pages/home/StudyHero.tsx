@@ -1,4 +1,4 @@
-import React from "react";
+
 import {
   FaArrowRight,
   FaGraduationCap,
@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 
 const WHATSAPP_URL =
-  "https://wa.me/8801977550083?text=আসসালামু%20আলাইকুম,%20আমি%20Study%20Abroad%20সম্পর্কে%20বিস্তারিত%20জানতে%20চাই।";
+  "https://wa.me/8801977005583?text=আসসালামু%20আলাইকুম,%20আমি%20Study%20Abroad%20সম্পর্কে%20বিস্তারিত%20জানতে%20চাই।";
 
 const StudyHero = () => {
   return (
@@ -56,7 +56,7 @@ const StudyHero = () => {
 
               বিদেশে পড়াশোনার
 
-              <span className="mt-1 block bg-gradient-to-r from-yellow-300 via-yellow-400 to-orange-400 bg-clip-text text-transparent">
+              <span className="mt-1 pb-3 block bg-gradient-to-r from-yellow-300 via-yellow-400 to-orange-400 bg-clip-text text-transparent">
                 নতুন সুযোগ
               </span>
 
@@ -64,9 +64,11 @@ const StudyHero = () => {
 
             {/* Description */}
             <p className="mt-6 max-w-2xl text-sm leading-7 text-slate-300 sm:text-base sm:leading-8 lg:text-lg">
-              Greece, Cyprus, Czech Republic এবং Armenia-তে
-              Bachelor (Honours) ও Masters প্রোগ্রামে উচ্চশিক্ষার
-              সুযোগ সম্পর্কে জানুন।
+       <p className="mt-6 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg">
+  Greece, Cyprus, Czech Republic, Armenia, Malta, UK, USA এবং
+  Netherlands-এ Bachelor (Honours), Masters ও উচ্চশিক্ষার
+  বিভিন্ন প্রোগ্রামে পড়াশোনার সুযোগ সম্পর্কে জানুন।
+</p>
             </p>
 
             {/* CTA */}

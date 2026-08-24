@@ -1,4 +1,4 @@
-import React from "react";
+
 import {
   FaArrowRight,
   FaBookOpen,
@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 
 const WHATSAPP_URL =
-  "https://wa.me/8801977550083?text=আসসালামু%20আলাইকুম,%20আমি%20Malaysia-তে%20Masters%20ও%20PhD%20সম্পর্কে%20বিস্তারিত%20জানতে%20চাই।";
+  "https://wa.me/8801977005583?text=আসসালামু%20আলাইকুম,%20আমি%20Malaysia-তে%20Masters%20ও%20PhD%20সম্পর্কে%20বিস্তারিত%20জানতে%20চাই।";
 
 const MalaysiaSection: React.FC = () => {
   const studyFields = [

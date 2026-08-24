@@ -1,4 +1,4 @@
-import React from "react";
+
 import {
   FaFacebookF,
   FaGraduationCap,
@@ -12,16 +12,16 @@ import {
 
 const contacts = [
   {
-    number: "01977550083",
-    whatsapp: "8801977550083",
+    number: "01977005583",
+    whatsapp: "8801977005583",
   },
   {
-    number: "01977550082",
-    whatsapp: "8801977550082",
+    number: "01977005582",
+    whatsapp: "8801977005582",
   },
   {
-    number: "01977550081",
-    whatsapp: "8801977550081",
+    number: "01977005581",
+    whatsapp: "8801977005581",
   },
 ];
 
@@ -300,91 +300,236 @@ const ContactCTA: React.FC = () => {
         {/* =====================================================
             CONTACT INFO
         ====================================================== */}
+<div
+  className="
+    mt-16
+    grid
+    gap-8
+    border-y
+    border-white/10
+    py-10
+    sm:mt-20
+    sm:gap-10
+    sm:py-12
+    md:grid-cols-3
+    lg:gap-14
+  "
+>
+  {/* =====================================================
+      PHONE
+  ====================================================== */}
 
-        <div
-          className="
-            mt-16
-            grid
-            gap-7
-            border-y
-            border-white/10
-            py-8
-            sm:mt-20
-            md:grid-cols-3
-          "
-        >
+  <a
+    href="tel:+8801977005583"
+    className="
+      group
+      flex
+      items-center
+      justify-center
+      gap-4
+      md:justify-start
+    "
+  >
+    <div
+      className="
+        flex
+        h-14
+        w-14
+        shrink-0
+        items-center
+        justify-center
+        rounded-2xl
+        border
+        border-yellow-400/10
+        bg-yellow-400/[0.08]
+        text-yellow-400
+        transition-all
+        duration-300
+        group-hover:scale-105
+        group-hover:bg-yellow-400
+        group-hover:text-slate-950
+      "
+    >
+      <FaPhoneAlt size={18} />
+    </div>
 
-          {/* Phone */}
-          <div className="flex items-center justify-center gap-3 md:justify-start">
+    <div>
+      <p
+        className="
+          text-[10px]
+          font-semibold
+          uppercase
+          tracking-[0.2em]
+          text-slate-600
+          sm:text-xs
+        "
+      >
+        Call Us
+      </p>
 
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-yellow-400/[0.08] text-yellow-400">
-              <FaPhoneAlt size={14} />
-            </div>
+      <p
+        className="
+          mt-1
+          text-base
+          font-black
+          tracking-wide
+          text-white
+          sm:text-lg
+        "
+      >
+        01977005583
+      </p>
 
-            <div>
-              <p className="text-[10px] uppercase tracking-wider text-slate-600">
-                Call Us
-              </p>
+      <p className="mt-1 text-xs text-slate-500">
+        Available for consultation
+      </p>
+    </div>
+  </a>
 
-              <p className="mt-1 text-sm font-bold text-white">
-                01977550083
-              </p>
+  {/* =====================================================
+      FACEBOOK
+  ====================================================== */}
 
-            </div>
+  <a
+    href={FACEBOOK_URL}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="
+      group
+      flex
+      items-center
+      justify-center
+      gap-4
+    "
+  >
+    <div
+      className="
+        flex
+        h-14
+        w-14
+        shrink-0
+        items-center
+        justify-center
+        rounded-2xl
+        border
+        border-blue-400/10
+        bg-blue-500/10
+        text-blue-400
+        transition-all
+        duration-300
+        group-hover:scale-105
+        group-hover:bg-blue-500
+        group-hover:text-white
+      "
+    >
+      <FaFacebookF size={19} />
+    </div>
 
-          </div>
+    <div>
+      <p
+        className="
+          text-[10px]
+          font-semibold
+          uppercase
+          tracking-[0.2em]
+          text-slate-600
+          sm:text-xs
+        "
+      >
+        Follow Us
+      </p>
 
-          {/* Facebook */}
-          <a
-            href={FACEBOOK_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex items-center justify-center gap-3 md:justify-center"
-          >
+      <p
+        className="
+          mt-1
+          text-base
+          font-black
+          tracking-wide
+          text-white
+          sm:text-lg
+        "
+      >
+        Facebook Page
+      </p>
 
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-500/10 text-blue-400 transition group-hover:bg-blue-500 group-hover:text-white">
-              <FaFacebookF size={14} />
-            </div>
+      <p className="mt-1 text-xs text-slate-500">
+        Stay connected with us
+      </p>
+    </div>
+  </a>
 
-            <div className="text-left">
+  {/* =====================================================
+      EMAIL
+  ====================================================== */}
 
-              <p className="text-[10px] uppercase tracking-wider text-slate-600">
-                Follow Us
-              </p>
+  <a
+    href="mailto:info@avelonbd.com"
+    className="
+      group
+      flex
+      items-center
+      justify-center
+      gap-4
+      md:justify-end
+    "
+  >
+    <div
+      className="
+        flex
+        h-14
+        w-14
+        shrink-0
+        items-center
+        justify-center
+        rounded-2xl
+        border
+        border-yellow-400/10
+        bg-yellow-400/10
+        text-yellow-400
+        transition-all
+        duration-300
+        group-hover:scale-105
+        group-hover:bg-yellow-400
+        group-hover:text-slate-950
+      "
+    >
+      <FaEnvelope size={18} />
+    </div>
 
-              <p className="mt-1 text-sm font-bold text-white">
-                Facebook Page
-              </p>
+    <div>
+      <p
+        className="
+          text-[10px]
+          font-semibold
+          uppercase
+          tracking-[0.2em]
+          text-slate-600
+          sm:text-xs
+        "
+      >
+        Email Us
+      </p>
 
-            </div>
+      <p
+        className="
+          mt-1
+          text-base
+          font-black
+          tracking-wide
+          text-white
+          sm:text-lg
+        "
+      >
+        info@avelonbd.com
+      </p>
 
-          </a>
-
-          {/* Email */}
-          <a
-            href="mailto:info@avelonbd.com"
-            className="group flex items-center justify-center gap-3 md:justify-end"
-          >
-
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-yellow-400/10 text-yellow-400">
-              <FaEnvelope size={14} />
-            </div>
-
-            <div className="text-left">
-
-              <p className="text-[10px] uppercase tracking-wider text-slate-600">
-                Email Us
-              </p>
-
-              <p className="mt-1 text-sm font-bold text-white">
-                info@youragency.com
-              </p>
-
-            </div>
-
-          </a>
-
-        </div>
+      <p className="mt-1 text-xs text-slate-500">
+        Send us your inquiry
+      </p>
+    </div>
+  </a>
+</div>
+   
 
         {/* =====================================================
             BOTTOM

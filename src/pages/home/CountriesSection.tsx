@@ -1,4 +1,4 @@
-import React from "react";
+
 import SectionHeading from "./SectionHeading";
 import CountryCard from "./CountryCard";
 const studyCountries = [
