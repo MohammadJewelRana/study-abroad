@@ -107,18 +107,18 @@ const CountriesSection = () => {
     >
       <div className="mx-auto max-w-7xl">
 
-        <SectionHeading
-          eyebrow="Study Destinations"
-          title={
-            <>
-              আপনার পছন্দের{" "}
-              <span className="text-red-600">
-                Study Destination
-              </span>
-            </>
-          }
-          description="Greece, Cyprus, Czech Republic এবং Armenia-তে Bachelor (Honours) ও Masters প্রোগ্রামের সুযোগ সম্পর্কে জানুন।"
-        />
+ <SectionHeading
+  eyebrow="Study Destinations"
+  title={
+    <>
+      আপনার জন্য সঠিক
+      <span className="block text-red-600">
+        Study Destination
+      </span>
+    </>
+  }
+  description="Greece, Cyprus, Czech Republic এবং Armenia-তে Bachelor (Honours) ও Masters প্রোগ্রামের সুযোগ সম্পর্কে জানুন।"
+/>
 
         <div className="mt-12 grid gap-7 md:grid-cols-2">
 
